@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "adbkit-monkey": "^1.0.1",
+    "axios": "^0.19.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "puppeteer": "^2.0.0"
+  }
+}
