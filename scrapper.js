@@ -49,7 +49,7 @@ class Scrapper {
     this.logger('Starting logging session');
 
     // Chromium doesn't load .mp4 natively, therefore it's easier to use Chrome
-    puppeteer.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' }).then(async browser => {
+    puppeteer.launch({ executablePath: process.env.CHROME_BIN, args: ['--no-sandbox'] }).then(async browser => {
       this.page = await browser.newPage();
     
       

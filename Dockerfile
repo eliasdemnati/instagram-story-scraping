@@ -1,4 +1,4 @@
-FROM node:12-slim
+FROM node:12
 
 # Install Chrome
 RUN echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/chrome.list
@@ -9,3 +9,10 @@ ENV CHROME_BIN /usr/bin/google-chrome
 # Log versions
 RUN set -x && node -v && npm -v && google-chrome --version
 RUN which google-chrome
+
+# Run project
+COPY . /src
+WORKDIR /src
+RUN yarn
+EXPOSE 3000
+CMD yarn start
