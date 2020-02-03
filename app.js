@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Setup database
-const db = new Datastore();
+const db = new Datastore({ filename: './insta.db' });
 db.ensureIndex({ fieldName: 'name', unique: true });
 db.loadDatabase(() => {
   logger('Database has beed loaded, launching previous status');
