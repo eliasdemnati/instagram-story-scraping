@@ -39,6 +39,6 @@ The fetch routine will begin, and any media will be sent with a POST request to 
 }
 ```
 
-Where `requestUrl` is the URL of the story.
+Where `requestUrl` is the URL of the story. Then you can either save the URL directly, or download the file. I obviously suggest you to download the file, because the link will eventually expires.
 
 ### Feel free to use this project as you want.
