@@ -1,6 +1,7 @@
 # Instagram Story Scraping
 
 The purpose of this project is to automatically fetch Instagram stories from given accounts. It was initially built in order to create an archive of celebrities stories, but this project is now abandoned. I can be used as an OSINT tool.
+
 It can fetch pictures aswell as videos, in the best quality available. It works for private or public accounts, as long as the account used for fetching is following the target.
 
 ## How does it work ?
